@@ -3,13 +3,13 @@
     <meta charset="utf-8">
     <title>Localizador</title>
     <script>
-            function localizador() {
+            function localizadora() {
                 if (localizador == 45) {
-        					factor = 2;
+                    document.getElementById("salida").innerHTML = "Su esta a punto de llegar.";
             			 }
         let precioFinal = precio * factor
         if (isNaN(localizador)) {
-            localizador ="No existe su localizador, comprueve que esta bien."
+            document.getElementById("salida").innerHTML = "Su paquete esta en Hungria.";
         }
         document.getElementById("salida").innerHTML = "Su paquete esta en Hungria.";
 }
@@ -22,7 +22,7 @@
 
 
         <div><input id="localizador" type="text" value=""></div>
-        <input id="Comprovador" type="button" value="Comprueva" onclick="localizador()">
+        <input id="Comprovador" type="button" value="Comprueba" onclick="localizadora()">
 
 
 
