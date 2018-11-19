@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>Localizador</title>
     <script>
+            function localizador() {
                 if (localizador == 45) {
         					factor = 2;
             			 }
@@ -11,6 +12,7 @@
             localizador ="No existe su localizador, comprueve que esta bien."
         }
         document.getElementById("salida").innerHTML = "Su paquete esta en Hungria.";
+}
 </script>
     </script>
     </head>
@@ -20,6 +22,7 @@
 
 
         <div><input id="localizador" type="text" value=""></div>
+        <input id="Comprovador" type="button" value="Comprueva" onclick="localizador()">
 
 
 
