@@ -2,13 +2,24 @@
 <html> <head>
     <meta charset="utf-8">
     <title>Localizador</title>
+    <script>
+                if (localizador == 45) {
+        					factor = 2;
+            			 }
+        let precioFinal = precio * factor
+        if (isNaN(localizador)) {
+            localizador ="No existe su localizador, comprueve que esta bien."
+        }
+        document.getElementById("salida").innerHTML = "Su paquete esta en Hungria.";
+</script>
+    </script>
     </head>
     <body>
         <h2>Bienvenido al Localizador, aquí podrás localizar tus paquetes</h2></body></br>
         <p3>A continuación tienes que introducir el código de seguimiento que te dimos o le dimos a tu amigo.</p3></br>
 
 
-        <div></div>
+        <div><input id="localizador" type="text" value=""></div>
 
 
 
